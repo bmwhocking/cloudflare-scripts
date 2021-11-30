@@ -1,0 +1,20 @@
+Cloudflare Domain page forward.
+f the URL matches: By using the asterisk (*) character, you can create dynamic patterns that can match many URLs, rather than just one. All URLs are case insensitive.
+
+Root Domain:
+domain.com/*
+
+Then the settings are
+Forwarding URL   301 - Permanent Redirect
+
+https://www.domain.com/$1
+
+
+
+All Subdomain Domains:
+*.domain.com/*
+
+Then the settings are
+Forwarding URL   301 - Permanent Redirect
+
+https://www.domain.com/$2
